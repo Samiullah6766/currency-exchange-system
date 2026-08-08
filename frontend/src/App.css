@@ -1,0 +1,21 @@
+.form-control {
+  border-radius: 12px;
+  padding: 12px 14px;
+  border: 1px solid #dbe3ee;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.card {
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  min-width: 130px;
+}

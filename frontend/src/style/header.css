@@ -1,0 +1,561 @@
+/* ===========================
+   MAIN NAVBAR
+=========================== */
+
+.ministry-navbar {
+
+    min-height: 82px;
+
+    background: linear-gradient(
+        90deg,
+        #123875,
+        #1d56a5,
+        #17458f
+    );
+
+    direction: rtl;
+
+    padding: 8px 0;
+
+}
+
+
+
+/* ===========================
+   BRAND / LOGO
+=========================== */
+
+
+.navbar-brand {
+
+    color:white !important;
+
+}
+
+
+
+.logo-circle {
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.15);
+
+}
+
+
+
+.logo-circle img {
+
+    width:85%;
+
+    height:85%;
+
+    object-fit:contain;
+
+}
+
+
+
+.company-name {
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:800;
+
+    white-space:nowrap;
+
+}
+
+
+
+
+
+/* ===========================
+   NAVIGATION LINKS
+=========================== */
+
+
+.navbar-nav {
+
+    gap:4px;
+
+}
+
+
+
+.navbar-nav .nav-link {
+
+
+    color:rgba(255,255,255,.92)!important;
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+    padding:12px 15px!important;
+
+
+    position:relative;
+
+
+    transition:.3s;
+
+
+    white-space:nowrap;
+
+}
+
+
+
+.navbar-nav .nav-link:hover {
+
+
+    color:white!important;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+/* underline animation */
+
+.navbar-nav .nav-link::after {
+
+
+    content:"";
+
+    position:absolute;
+
+    bottom:5px;
+
+    right:50%;
+
+
+    width:0;
+
+    height:2px;
+
+
+    background:#ffc107;
+
+
+    transition:.3s;
+
+
+    transform:translateX(50%);
+
+
+}
+
+
+
+.navbar-nav .nav-link:hover::after {
+
+
+    width:60%;
+
+
+}
+
+
+
+
+
+/* ===========================
+   AUTH BUTTONS
+=========================== */
+
+
+.auth-buttons {
+
+
+    direction:ltr;
+
+    align-items:center;
+
+
+}
+
+
+
+.auth-buttons .btn {
+
+
+    font-size:15px;
+
+    font-weight:700;
+
+
+    padding:
+
+    11px 24px!important;
+
+
+    border-radius:30px!important;
+
+
+    white-space:nowrap;
+
+
+}
+
+
+
+
+
+/* Login */
+
+.auth-buttons .btn-outline-light {
+
+
+    border-width:2px;
+
+
+}
+
+
+
+/* Register */
+
+.auth-buttons .btn-warning {
+
+
+    background:#ffbd00;
+
+
+    border:none;
+
+
+    color:#222;
+
+
+}
+
+
+
+
+/* Logout */
+
+.auth-buttons .btn-danger {
+
+
+    background:#ef3340;
+
+
+    border:none;
+
+
+}
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+.navbar-toggler {
+
+
+    border:none;
+
+}
+
+
+
+.navbar-toggler:focus {
+
+
+    box-shadow:none;
+
+
+}
+
+
+
+@media(max-width:1199px){
+
+
+    .navbar-collapse {
+
+
+        margin-top:15px;
+
+
+        padding:15px;
+
+
+        background:
+
+        rgba(15,50,110,.97);
+
+
+        border-radius:15px;
+
+
+    }
+
+
+
+    .navbar-nav {
+
+
+        align-items:flex-start!important;
+
+
+    }
+
+
+
+    .auth-buttons {
+
+
+        margin-top:15px;
+
+
+        flex-wrap:wrap;
+
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .company-name {
+
+
+        font-size:16px;
+
+
+    }
+
+
+    .logo-circle {
+
+
+        width:48px;
+
+        height:48px;
+
+
+    }
+
+
+}
+
+/* Current logged-in user */
+
+.current-user-box {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.12);
+
+    white-space:nowrap;
+
+}
+
+
+.current-user-text {
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    line-height:1.2;
+
+}
+
+
+.current-user-text .user-label {
+
+    font-size:12px;
+
+    font-weight:600;
+
+    opacity:.8;
+
+}
+
+
+.current-user-text span:last-child {
+
+    font-size:14px;
+
+    font-weight:800;
+
+}
+
+
+/* Laptop screens */
+@media (max-width: 1450px) {
+
+    .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+
+    .navbar-brand {
+        gap: 10px !important;
+    }
+
+
+    .company-name {
+        font-size: 14px;
+    }
+
+
+    .nav-link {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        font-size: 14px;
+    }
+
+
+    .auth-buttons {
+        gap: 5px !important;
+    }
+
+
+    .auth-buttons .btn {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        font-size: 13px;
+    }
+
+
+    .current-user-box {
+        padding: 4px 8px;
+    }
+
+
+    .current-user-icon {
+        font-size: 22px;
+    }
+
+
+    .current-user-text span {
+        font-size: 12px;
+    }
+
+}
+
+
+/* Smaller laptops */
+@media (max-width: 1200px) {
+
+    .navbar-expand-xl .navbar-collapse {
+        background: rgba(0,0,0,0.15);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+
+    .auth-buttons {
+        justify-content: center;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+}
+
+.internet-status {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 60px;
+  height: 45px;
+  color: white;
+}
+
+.internet-status {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    color: white;
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+.internet-status .status-text {
+    order: 1;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.internet-status .status-dot {
+    order: 2;
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+    border-radius: 50%;
+}
+
+.internet-status .status-dot.online {
+    background-color: #28a745;
+    box-shadow: 0 0 8px #28a745;
+}
+
+.internet-status .status-dot.offline {
+    background-color: #dc3545;
+    box-shadow: 0 0 8px #dc3545;
+}
